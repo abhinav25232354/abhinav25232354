@@ -1,1 +1,3 @@
-I’m Abhinav, a BCA graduate and aspiring engineer passionate about software development, problem-solving, and building impactful projects. I enjoy exploring full-stack technologies while strengthening my skills in programming, data structures, and real-world application development. Always learning, always improving — and excited to contribute to meaningful tech innovations.
+## Abhinav
+
+BCA graduate and aspiring engineer focused on software development and practical problem-solving. Continuously learning, building projects, and exploring full-stack technologies to grow as a developer.
