@@ -1,3 +1,5 @@
-## Abhinav
+<p align="center">
+  <img src="https://via.placeholder.com/900x200?text=Abhinav+-+Software+Developer" alt="Profile Banner">
+</p>
 
-BCA graduate and aspiring engineer focused on software development and practical problem-solving. Continuously learning, building projects, and exploring full-stack technologies to grow as a developer.
+Aspiring software engineer passionate about building real-world solutions and constantly improving through hands-on learning.
