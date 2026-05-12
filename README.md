@@ -10,9 +10,9 @@ BCA graduate and aspiring engineer focused on software development and practical
 
 ## 📊 GitHub Stats
 
-![Abhinav's GitHub Stats](https://github-readme-stats.vercel.app/api?username=abhinav25232354&show_icons=true&theme=dark&hide_border=false&include_all_commits=true&count_private=true)
+![Abhinav's GitHub Stats](https://github-stats-alpha.vercel.app/api?username=abhinav25232354&show_icons=true&theme=dark)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=abhinav25232354&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+![Top Languages](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=abhinav25232354&theme=dark&layout=compact)
 
 ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=abhinav25232354&theme=dark&hide_border=false)
 
