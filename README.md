@@ -1,5 +1,5 @@
 # About Me:
-BCA graduate and aspiring engineer focused on software development and practical problem-solving. Continuously learning, building projects, and exploring full-stack technologies to grow as a developer.
+Software developer who started coding at 13 and never really stopped. I build full-stack projects, ship real products, and care deeply about how things work under the hood — not just that they work. Holds a BCA from University of Allahabad. Currently exploring systems programming, Linux internals, and practical AI integration. If I'm not building something, I'm probably breaking something to understand it better.
 
 
 ## Socials:
