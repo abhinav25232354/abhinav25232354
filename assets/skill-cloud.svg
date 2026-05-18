@@ -1,0 +1,223 @@
+<svg viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg" font-family="'Courier New', Courier, monospace">
+  <defs>
+    <style>
+      .skill-tag {
+        animation: skillAppear 0.4s ease both;
+      }
+      .s1  { animation-delay: 0.3s; }
+      .s2  { animation-delay: 0.55s; }
+      .s3  { animation-delay: 0.8s; }
+      .s4  { animation-delay: 1.05s; }
+      .s5  { animation-delay: 1.3s; }
+      .s6  { animation-delay: 1.55s; }
+      .s7  { animation-delay: 1.8s; }
+      .s8  { animation-delay: 2.05s; }
+      .s9  { animation-delay: 2.3s; }
+      .s10 { animation-delay: 2.55s; }
+      .s11 { animation-delay: 2.8s; }
+      .s12 { animation-delay: 3.05s; }
+      .s13 { animation-delay: 3.3s; }
+      .s14 { animation-delay: 3.55s; }
+      .s15 { animation-delay: 3.8s; }
+      .s16 { animation-delay: 4.05s; }
+      .s17 { animation-delay: 4.3s; }
+      .s18 { animation-delay: 4.55s; }
+      .s19 { animation-delay: 4.8s; }
+      .s20 { animation-delay: 5.05s; }
+      @keyframes skillAppear {
+        from { opacity: 0; transform: scale(0.7) translateY(6px); }
+        to   { opacity: 1; transform: scale(1) translateY(0); }
+      }
+
+      /* Hover-like pulse for featured skills */
+      .featured {
+        animation: skillAppear 0.4s ease both, featuredPulse 3s ease-in-out infinite;
+      }
+      @keyframes featuredPulse {
+        0%, 100% { filter: drop-shadow(0 0 3px #00ff88); }
+        50%       { filter: drop-shadow(0 0 8px #00ff88); }
+      }
+
+      .section-fade {
+        animation: fadeIn 0.4s ease 0.1s both;
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+      }
+
+      .border-draw {
+        stroke-dasharray: 2300;
+        stroke-dashoffset: 2300;
+        animation: drawB 1.2s ease 0.1s forwards;
+      }
+      @keyframes drawB {
+        to { stroke-dashoffset: 0; }
+      }
+    </style>
+
+    <linearGradient id="bg3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#080e08"/>
+      <stop offset="100%" stop-color="#050c05"/>
+    </linearGradient>
+
+    <!-- Tag bg for regular -->
+    <linearGradient id="tagBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f1f0f"/>
+      <stop offset="100%" stop-color="#091409"/>
+    </linearGradient>
+
+    <!-- Tag bg for featured -->
+    <linearGradient id="featuredBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a2a15"/>
+      <stop offset="100%" stop-color="#051205"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="260" rx="6" fill="url(#bg3)"/>
+  <rect class="border-draw" x="1" y="1" width="898" height="258" rx="5" fill="none" stroke="#00ff88" stroke-width="0.8" opacity="0.4"/>
+
+  <!-- Header -->
+  <g class="section-fade">
+    <text x="20" y="30" font-size="10" fill="#00ff88" opacity="0.4" letter-spacing="3">── TECH.STACK ─────────────────────────────────────────────────────────</text>
+    <text x="20" y="52" font-size="11" fill="#00ff88" opacity="0.3">$ ls -la ~/skills/</text>
+  </g>
+
+  <!-- ── Row 1: Languages (featured) ── -->
+  <!-- Python -->
+  <g class="skill-tag featured s1" transform="translate(20, 66)">
+    <rect width="82" height="28" rx="3" fill="url(#featuredBg)" stroke="#00ff88" stroke-width="1"/>
+    <text x="12" y="19" font-size="11" fill="#00ff88">🐍 Python</text>
+  </g>
+  <!-- JavaScript -->
+  <g class="skill-tag featured s2" transform="translate(112, 66)">
+    <rect width="102" height="28" rx="3" fill="url(#featuredBg)" stroke="#00ff88" stroke-width="1"/>
+    <text x="12" y="19" font-size="11" fill="#00ff88">JS JavaScript</text>
+  </g>
+  <!-- C -->
+  <g class="skill-tag featured s3" transform="translate(224, 66)">
+    <rect width="52" height="28" rx="3" fill="url(#featuredBg)" stroke="#00ff88" stroke-width="1"/>
+    <text x="12" y="19" font-size="11" fill="#00ff88">C</text>
+  </g>
+  <!-- C# -->
+  <g class="skill-tag featured s4" transform="translate(286, 66)">
+    <rect width="54" height="28" rx="3" fill="url(#featuredBg)" stroke="#00ff88" stroke-width="1"/>
+    <text x="10" y="19" font-size="11" fill="#00ff88">C#</text>
+  </g>
+  <!-- Java -->
+  <g class="skill-tag s5" transform="translate(350, 66)">
+    <rect width="66" height="28" rx="3" fill="url(#tagBg)" stroke="#00ff88" stroke-width="0.6" stroke-opacity="0.5"/>
+    <text x="12" y="19" font-size="11" fill="#4aaa77">Java</text>
+  </g>
+  <!-- HTML5 -->
+  <g class="skill-tag s6" transform="translate(426, 66)">
+    <rect width="74" height="28" rx="3" fill="url(#tagBg)" stroke="#00ff88" stroke-width="0.6" stroke-opacity="0.5"/>
+    <text x="10" y="19" font-size="11" fill="#4aaa77">HTML5</text>
+  </g>
+  <!-- TailwindCSS -->
+  <g class="skill-tag s7" transform="translate(510, 66)">
+    <rect width="110" height="28" rx="3" fill="url(#tagBg)" stroke="#00ff88" stroke-width="0.6" stroke-opacity="0.5"/>
+    <text x="10" y="19" font-size="11" fill="#4aaa77">TailwindCSS</text>
+  </g>
+  <!-- MySQL -->
+  <g class="skill-tag s8" transform="translate(630, 66)">
+    <rect width="72" height="28" rx="3" fill="url(#tagBg)" stroke="#00ff88" stroke-width="0.6" stroke-opacity="0.5"/>
+    <text x="10" y="19" font-size="11" fill="#4aaa77">MySQL</text>
+  </g>
+
+  <!-- ── Row 2: Frameworks / Infra ── -->
+  <!-- Flask -->
+  <g class="skill-tag featured s9" transform="translate(20, 106)">
+    <rect width="68" height="28" rx="3" fill="url(#featuredBg)" stroke="#00ff88" stroke-width="1"/>
+    <text x="10" y="19" font-size="11" fill="#00ff88">Flask</text>
+  </g>
+  <!-- .NET -->
+  <g class="skill-tag s10" transform="translate(98, 106)">
+    <rect width="62" height="28" rx="3" fill="url(#tagBg)" stroke="#00ff88" stroke-width="0.6" stroke-opacity="0.5"/>
+    <text x="10" y="19" font-size="11" fill="#4aaa77">.NET</text>
+  </g>
+  <!-- Netlify -->
+  <g class="skill-tag s11" transform="translate(170, 106)">
+    <rect width="76" height="28" rx="3" fill="url(#tagBg)" stroke="#00ff88" stroke-width="0.6" stroke-opacity="0.5"/>
+    <text x="10" y="19" font-size="11" fill="#4aaa77">Netlify</text>
+  </g>
+  <!-- Cloudflare -->
+  <g class="skill-tag s12" transform="translate(256, 106)">
+    <rect width="96" height="28" rx="3" fill="url(#tagBg)" stroke="#00ff88" stroke-width="0.6" stroke-opacity="0.5"/>
+    <text x="10" y="19" font-size="11" fill="#4aaa77">Cloudflare</text>
+  </g>
+  <!-- Render -->
+  <g class="skill-tag s13" transform="translate(362, 106)">
+    <rect width="74" height="28" rx="3" fill="url(#tagBg)" stroke="#00ff88" stroke-width="0.6" stroke-opacity="0.5"/>
+    <text x="10" y="19" font-size="11" fill="#4aaa77">Render</text>
+  </g>
+  <!-- Heroku -->
+  <g class="skill-tag s14" transform="translate(446, 106)">
+    <rect width="76" height="28" rx="3" fill="url(#tagBg)" stroke="#00ff88" stroke-width="0.6" stroke-opacity="0.5"/>
+    <text x="10" y="19" font-size="11" fill="#4aaa77">Heroku</text>
+  </g>
+  <!-- WordPress -->
+  <g class="skill-tag s15" transform="translate(532, 106)">
+    <rect width="96" height="28" rx="3" fill="url(#tagBg)" stroke="#00ff88" stroke-width="0.6" stroke-opacity="0.5"/>
+    <text x="10" y="19" font-size="11" fill="#4aaa77">WordPress</text>
+  </g>
+  <!-- Figma -->
+  <g class="skill-tag s16" transform="translate(638, 106)">
+    <rect width="68" height="28" rx="3" fill="url(#tagBg)" stroke="#00ff88" stroke-width="0.6" stroke-opacity="0.5"/>
+    <text x="10" y="19" font-size="11" fill="#4aaa77">Figma</text>
+  </g>
+
+  <!-- ── Row 3: ML / Tools / OS ── -->
+  <!-- Linux -->
+  <g class="skill-tag featured s17" transform="translate(20, 146)">
+    <rect width="74" height="28" rx="3" fill="url(#featuredBg)" stroke="#00ff88" stroke-width="1"/>
+    <text x="10" y="19" font-size="11" fill="#00ff88">Linux</text>
+  </g>
+  <!-- Git -->
+  <g class="skill-tag featured s18" transform="translate(104, 146)">
+    <rect width="54" height="28" rx="3" fill="url(#featuredBg)" stroke="#00ff88" stroke-width="1"/>
+    <text x="10" y="19" font-size="11" fill="#00ff88">Git</text>
+  </g>
+  <!-- NumPy -->
+  <g class="skill-tag s19" transform="translate(168, 146)">
+    <rect width="78" height="28" rx="3" fill="url(#tagBg)" stroke="#00ff88" stroke-width="0.6" stroke-opacity="0.5"/>
+    <text x="10" y="19" font-size="11" fill="#4aaa77">NumPy</text>
+  </g>
+  <!-- Pandas -->
+  <g class="skill-tag s19" transform="translate(256, 146)">
+    <rect width="80" height="28" rx="3" fill="url(#tagBg)" stroke="#00ff88" stroke-width="0.6" stroke-opacity="0.5"/>
+    <text x="10" y="19" font-size="11" fill="#4aaa77">Pandas</text>
+  </g>
+  <!-- scikit-learn -->
+  <g class="skill-tag s19" transform="translate(346, 146)">
+    <rect width="104" height="28" rx="3" fill="url(#tagBg)" stroke="#00ff88" stroke-width="0.6" stroke-opacity="0.5"/>
+    <text x="10" y="19" font-size="11" fill="#4aaa77">scikit-learn</text>
+  </g>
+  <!-- MediaPipe -->
+  <g class="skill-tag s20" transform="translate(460, 146)">
+    <rect width="96" height="28" rx="3" fill="url(#tagBg)" stroke="#00ff88" stroke-width="0.6" stroke-opacity="0.5"/>
+    <text x="10" y="19" font-size="11" fill="#4aaa77">MediaPipe</text>
+  </g>
+  <!-- OpenCV -->
+  <g class="skill-tag s20" transform="translate(566, 146)">
+    <rect width="82" height="28" rx="3" fill="url(#tagBg)" stroke="#00ff88" stroke-width="0.6" stroke-opacity="0.5"/>
+    <text x="10" y="19" font-size="11" fill="#4aaa77">OpenCV</text>
+  </g>
+  <!-- Ollama -->
+  <g class="skill-tag s20" transform="translate(658, 146)">
+    <rect width="78" height="28" rx="3" fill="url(#tagBg)" stroke="#00ff88" stroke-width="0.6" stroke-opacity="0.5"/>
+    <text x="10" y="19" font-size="11" fill="#4aaa77">Ollama</text>
+  </g>
+
+  <!-- Legend -->
+  <g style="animation: fadeIn 0.4s ease 5.5s both;">
+    <rect x="20" y="194" width="14" height="10" rx="2" fill="none" stroke="#00ff88" stroke-width="1"/>
+    <text x="40" y="204" font-size="9" fill="#00ff88" opacity="0.5">primary</text>
+    <rect x="100" y="194" width="14" height="10" rx="2" fill="none" stroke="#00ff88" stroke-width="0.6" stroke-opacity="0.5"/>
+    <text x="120" y="204" font-size="9" fill="#4aaa77" opacity="0.5">familiar</text>
+    <text x="20" y="225" font-size="9" fill="#00ff88" opacity="0.2">// 20 technologies and growing</text>
+  </g>
+
+  <!-- Decorative right element -->
+  <text x="760" y="240" font-size="70" fill="#00ff88" opacity="0.03" font-weight="900">{}</text>
+</svg>

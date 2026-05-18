@@ -1,0 +1,126 @@
+<svg viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg" font-family="'Courier New', Courier, monospace">
+  <defs>
+    <style>
+      /* Typewriter lines — each line types then next starts */
+      .line1-mask {
+        animation: revealLine 1.8s steps(52, end) 0.5s both;
+      }
+      .line2-mask {
+        animation: revealLine 2s steps(58, end) 2.5s both;
+      }
+      .line3-mask {
+        animation: revealLine 1.6s steps(46, end) 4.8s both;
+      }
+      .line4-mask {
+        animation: revealLine 1.8s steps(52, end) 6.8s both;
+      }
+      @keyframes revealLine {
+        from { width: 0px; }
+        to { width: 860px; }
+      }
+
+      .prompt {
+        animation: fadeIn 0.2s ease both;
+      }
+      .prompt-1 { animation-delay: 0.3s; }
+      .prompt-2 { animation-delay: 2.3s; }
+      .prompt-3 { animation-delay: 4.6s; }
+      .prompt-4 { animation-delay: 6.6s; }
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+
+      .cursor-1 { animation: cursorHide 0s 2.4s forwards, blink 0.8s step-end 0.5s 24; }
+      .cursor-2 { animation: cursorHide 0s 4.7s forwards, blink 0.8s step-end 2.5s 28; }
+      .cursor-3 { animation: cursorHide 0s 6.7s forwards, blink 0.8s step-end 4.8s 22; }
+      .cursor-4 { animation: blink 0.8s step-end 6.8s infinite; }
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+      @keyframes cursorHide {
+        to { opacity: 0; }
+      }
+
+      .border-draw {
+        stroke-dasharray: 2200;
+        stroke-dashoffset: 2200;
+        animation: draw 1.5s ease 0.1s forwards;
+      }
+      @keyframes draw {
+        to { stroke-dashoffset: 0; }
+      }
+
+      .section-label {
+        animation: fadeIn 0.5s ease 0.1s both;
+      }
+    </style>
+    <linearGradient id="bgGrad2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#080e08"/>
+      <stop offset="100%" stop-color="#050c05"/>
+    </linearGradient>
+    <clipPath id="line1clip"><rect x="20" y="58" width="0" height="18"/></clipPath>
+    <clipPath id="line2clip"><rect x="20" y="93" width="0" height="18"/></clipPath>
+    <clipPath id="line3clip"><rect x="20" y="128" width="0" height="18"/></clipPath>
+    <clipPath id="line4clip"><rect x="20" y="163" width="0" height="18"/></clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="200" rx="6" fill="url(#bgGrad2)"/>
+
+  <!-- Border -->
+  <rect class="border-draw" x="1" y="1" width="898" height="198" rx="5" fill="none" stroke="#00ff88" stroke-width="0.8" opacity="0.4"/>
+
+  <!-- Section header -->
+  <g class="section-label">
+    <text x="20" y="30" font-size="10" fill="#00ff88" opacity="0.4" letter-spacing="3">── ABOUT.md ──────────────────────────────────────────────────────────</text>
+  </g>
+
+  <!-- Window title bar line -->
+  <line x1="20" y1="42" x2="880" y2="42" stroke="#00ff88" stroke-width="0.5" opacity="0.15"/>
+
+  <!-- Line 1 -->
+  <g class="prompt prompt-1">
+    <text x="20" y="72" font-size="12" fill="#00ff88" opacity="0.5">❯</text>
+    <text x="36" y="72" font-size="12" fill="#00ff88" opacity="0.35">echo</text>
+    <text x="68" y="72" font-size="12" fill="#c8ffd8">"Started coding at 13. Inspired by Iron Man. Never really stopped."</text>
+    <text x="745" y="72" font-size="12" fill="#00ff88" class="cursor-1">█</text>
+  </g>
+  <rect x="20" y="58" height="18" fill="#080e08">
+    <animate attributeName="width" from="860" to="0" dur="1.8s" begin="0.5s" calcMode="discrete" fill="freeze" keyTimes="0;1" values="860;0"/>
+  </rect>
+
+  <!-- Line 2 -->
+  <g class="prompt prompt-2">
+    <text x="20" y="107" font-size="12" fill="#00ff88" opacity="0.5">❯</text>
+    <text x="36" y="107" font-size="12" fill="#00ff88" opacity="0.35">echo</text>
+    <text x="68" y="107" font-size="12" fill="#c8ffd8">"Build full-stack projects. Ship real products. Care how things work under the hood."</text>
+    <text x="817" y="107" font-size="12" fill="#00ff88" class="cursor-2">█</text>
+  </g>
+  <rect x="20" y="93" height="18" fill="#080e08">
+    <animate attributeName="width" from="860" to="0" dur="2s" begin="2.5s" calcMode="discrete" fill="freeze" keyTimes="0;1" values="860;0"/>
+  </rect>
+
+  <!-- Line 3 -->
+  <g class="prompt prompt-3">
+    <text x="20" y="142" font-size="12" fill="#00ff88" opacity="0.5">❯</text>
+    <text x="36" y="142" font-size="12" fill="#00ff88" opacity="0.35">echo</text>
+    <text x="68" y="142" font-size="12" fill="#c8ffd8">"Exploring systems, Linux internals, practical AI. BCA @ University of Allahabad."</text>
+    <text x="793" y="142" font-size="12" fill="#00ff88" class="cursor-3">█</text>
+  </g>
+  <rect x="20" y="128" height="18" fill="#080e08">
+    <animate attributeName="width" from="860" to="0" dur="1.6s" begin="4.8s" calcMode="discrete" fill="freeze" keyTimes="0;1" values="860;0"/>
+  </rect>
+
+  <!-- Line 4 -->
+  <g class="prompt prompt-4">
+    <text x="20" y="177" font-size="12" fill="#00ff88" opacity="0.5">❯</text>
+    <text x="36" y="177" font-size="12" fill="#00ff88" opacity="0.35">echo</text>
+    <text x="68" y="177" font-size="12" fill="#c8ffd8">"If I'm not building something, I'm probably breaking it to understand it better."</text>
+    <text x="782" y="177" font-size="12" fill="#00ff88" class="cursor-4">█</text>
+  </g>
+  <rect x="20" y="163" height="18" fill="#080e08">
+    <animate attributeName="width" from="860" to="0" dur="1.8s" begin="6.8s" calcMode="discrete" fill="freeze" keyTimes="0;1" values="860;0"/>
+  </rect>
+</svg>

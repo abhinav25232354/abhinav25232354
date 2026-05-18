@@ -1,0 +1,139 @@
+<svg viewBox="0 0 900 130" xmlns="http://www.w3.org/2000/svg" font-family="'Courier New', Courier, monospace">
+  <defs>
+    <style>
+      .link-card {
+        animation: cardAppear 0.4s ease both;
+      }
+      .c1 { animation-delay: 0.3s; }
+      .c2 { animation-delay: 0.5s; }
+      .c3 { animation-delay: 0.7s; }
+      .c4 { animation-delay: 0.9s; }
+      .c5 { animation-delay: 1.1s; }
+      .c6 { animation-delay: 1.3s; }
+      .c7 { animation-delay: 1.5s; }
+      @keyframes cardAppear {
+        from { opacity: 0; transform: translateY(10px); }
+        to   { opacity: 1; transform: translateY(0); }
+      }
+
+      .fade-in { animation: fadeIn 0.4s ease 0.1s both; }
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+      }
+
+      .border-draw {
+        stroke-dasharray: 2100;
+        stroke-dashoffset: 2100;
+        animation: drawB 1s ease 0.1s forwards;
+      }
+      @keyframes drawB {
+        to { stroke-dashoffset: 0; }
+      }
+
+      .underline-anim {
+        stroke-dasharray: 80;
+        stroke-dashoffset: 80;
+        animation: drawUnder 0.4s ease both;
+      }
+      .u1 { animation-delay: 0.35s; }
+      .u2 { animation-delay: 0.55s; }
+      .u3 { animation-delay: 0.75s; }
+      .u4 { animation-delay: 0.95s; }
+      .u5 { animation-delay: 1.15s; }
+      .u6 { animation-delay: 1.35s; }
+      .u7 { animation-delay: 1.55s; }
+      @keyframes drawUnder {
+        from { stroke-dashoffset: 80; }
+        to   { stroke-dashoffset: 0; }
+      }
+    </style>
+
+    <linearGradient id="bg5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#080e08"/>
+      <stop offset="100%" stop-color="#050c05"/>
+    </linearGradient>
+
+    <linearGradient id="cardBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f1f0f"/>
+      <stop offset="100%" stop-color="#081408"/>
+    </linearGradient>
+
+    <linearGradient id="featCard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a2a15"/>
+      <stop offset="100%" stop-color="#051205"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="130" rx="6" fill="url(#bg5)"/>
+  <rect class="border-draw" x="1" y="1" width="898" height="128" rx="5" fill="none" stroke="#00ff88" stroke-width="0.8" opacity="0.4"/>
+
+  <!-- Header -->
+  <g class="fade-in">
+    <text x="20" y="26" font-size="10" fill="#00ff88" opacity="0.4" letter-spacing="3">── CONNECT ─────────────────────────────────────────────────────────────</text>
+  </g>
+
+  <!-- Social link cards -->
+  <!-- GitHub -->
+  <g class="link-card c1" transform="translate(20, 38)">
+    <rect width="106" height="68" rx="4" fill="url(#featCard)" stroke="#00ff88" stroke-width="1"/>
+    <text x="53" y="26" font-size="16" text-anchor="middle" fill="#00ff88">⌨</text>
+    <text x="53" y="44" font-size="9" text-anchor="middle" fill="#00ff88">GitHub</text>
+    <text x="53" y="58" font-size="8" text-anchor="middle" fill="#4aaa77">@abhinav25232354</text>
+    <line class="underline-anim u1" x1="10" y1="64" x2="96" y2="64" stroke="#00ff88" stroke-width="0.6" stroke-opacity="0.5"/>
+  </g>
+
+  <!-- YouTube -->
+  <g class="link-card c2" transform="translate(136, 38)">
+    <rect width="106" height="68" rx="4" fill="url(#cardBg)" stroke="#00ff88" stroke-width="0.6" stroke-opacity="0.4"/>
+    <text x="53" y="26" font-size="16" text-anchor="middle" fill="#4aaa77">▶</text>
+    <text x="53" y="44" font-size="9" text-anchor="middle" fill="#4aaa77">YouTube</text>
+    <text x="53" y="58" font-size="8" text-anchor="middle" fill="#2d7a4a">@dexteritycoder1026</text>
+    <line class="underline-anim u2" x1="10" y1="64" x2="96" y2="64" stroke="#00ff88" stroke-width="0.4" stroke-opacity="0.3"/>
+  </g>
+
+  <!-- Instagram -->
+  <g class="link-card c3" transform="translate(252, 38)">
+    <rect width="106" height="68" rx="4" fill="url(#cardBg)" stroke="#00ff88" stroke-width="0.6" stroke-opacity="0.4"/>
+    <text x="53" y="26" font-size="16" text-anchor="middle" fill="#4aaa77">◈</text>
+    <text x="53" y="44" font-size="9" text-anchor="middle" fill="#4aaa77">Instagram</text>
+    <text x="53" y="58" font-size="8" text-anchor="middle" fill="#2d7a4a">@dexteritycoder</text>
+    <line class="underline-anim u3" x1="10" y1="64" x2="96" y2="64" stroke="#00ff88" stroke-width="0.4" stroke-opacity="0.3"/>
+  </g>
+
+  <!-- LinkedIn -->
+  <g class="link-card c4" transform="translate(368, 38)">
+    <rect width="106" height="68" rx="4" fill="url(#cardBg)" stroke="#00ff88" stroke-width="0.6" stroke-opacity="0.4"/>
+    <text x="53" y="26" font-size="16" text-anchor="middle" fill="#4aaa77">in</text>
+    <text x="53" y="44" font-size="9" text-anchor="middle" fill="#4aaa77">LinkedIn</text>
+    <text x="53" y="58" font-size="8" text-anchor="middle" fill="#2d7a4a">abhinav-singh-44ba012bb</text>
+    <line class="underline-anim u4" x1="10" y1="64" x2="96" y2="64" stroke="#00ff88" stroke-width="0.4" stroke-opacity="0.3"/>
+  </g>
+
+  <!-- X / Twitter -->
+  <g class="link-card c5" transform="translate(484, 38)">
+    <rect width="106" height="68" rx="4" fill="url(#cardBg)" stroke="#00ff88" stroke-width="0.6" stroke-opacity="0.4"/>
+    <text x="53" y="26" font-size="16" text-anchor="middle" fill="#4aaa77">✕</text>
+    <text x="53" y="44" font-size="9" text-anchor="middle" fill="#4aaa77">X / Twitter</text>
+    <text x="53" y="58" font-size="8" text-anchor="middle" fill="#2d7a4a">@dexteritycoder</text>
+    <line class="underline-anim u5" x1="10" y1="64" x2="96" y2="64" stroke="#00ff88" stroke-width="0.4" stroke-opacity="0.3"/>
+  </g>
+
+  <!-- Medium -->
+  <g class="link-card c6" transform="translate(600, 38)">
+    <rect width="106" height="68" rx="4" fill="url(#cardBg)" stroke="#00ff88" stroke-width="0.6" stroke-opacity="0.4"/>
+    <text x="53" y="26" font-size="16" text-anchor="middle" fill="#4aaa77">M</text>
+    <text x="53" y="44" font-size="9" text-anchor="middle" fill="#4aaa77">Medium</text>
+    <text x="53" y="58" font-size="8" text-anchor="middle" fill="#2d7a4a">abhinavsingh9990604</text>
+    <line class="underline-anim u6" x1="10" y1="64" x2="96" y2="64" stroke="#00ff88" stroke-width="0.4" stroke-opacity="0.3"/>
+  </g>
+
+  <!-- Email -->
+  <g class="link-card c7" transform="translate(716, 38)">
+    <rect width="164" height="68" rx="4" fill="url(#cardBg)" stroke="#00ff88" stroke-width="0.6" stroke-opacity="0.4"/>
+    <text x="82" y="26" font-size="16" text-anchor="middle" fill="#4aaa77">@</text>
+    <text x="82" y="44" font-size="9" text-anchor="middle" fill="#4aaa77">Email</text>
+    <text x="82" y="58" font-size="7.5" text-anchor="middle" fill="#2d7a4a">abhinavsingh9990604@gmail.com</text>
+    <line class="underline-anim u7" x1="10" y1="64" x2="154" y2="64" stroke="#00ff88" stroke-width="0.4" stroke-opacity="0.3"/>
+  </g>
+</svg>
